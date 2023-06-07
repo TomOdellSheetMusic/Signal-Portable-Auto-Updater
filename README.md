@@ -23,5 +23,5 @@ app
 <br>.
 
 ### Future Plans
--Remove the need for 7zip
+-Remove the need for 7zip <br>
 -Make a Linux shell script
