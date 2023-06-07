@@ -5,6 +5,7 @@ Since the Signal Portable App from Portapps is a bit of a hassle to update each 
 
 ## Requirements 
 A working <a href="https://github.com/portapps/signal-portable">Signal Portable</a> instance from PortApps. 
+<a href="https://7-zip.de/download.html">7zip</a> at the standard installation path. 
 
 ## Usage 
 Simply put the batch folder into wherever you have your Signal Portable instance. This can also be done by extracting the zip from the Releases Tab. <br>
@@ -20,3 +21,7 @@ app
 <br>.
 <br>.
 <br>.
+
+### Future Plans
+-Remove the need for 7zip
+-Make a Linux shell script
