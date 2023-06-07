@@ -4,7 +4,7 @@
 Since the Signal Portable App from Portapps is a bit of a hassle to update each time, here is an easy script for you to use.
 
 ## Requirements 
-A working <a href="https://github.com/portapps/signal-portable">Signal Portable</a> instance from PortApps. 
+A working <a href="https://github.com/portapps/signal-portable">Signal Portable</a> instance from PortApps. <br>
 <a href="https://7-zip.de/download.html">7zip</a> at the standard installation path. 
 
 ## Usage 
