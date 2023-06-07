@@ -4,10 +4,11 @@
 Since the Signal Portable App from Portapps is a bit of a hassle to update each time, here is an easy script for you to use.
 
 ## Requirements 
-A working <a href="https://github.com/portapps/signal-portable">Signal Portable</a> instance
+A working <a href="https://github.com/portapps/signal-portable">Signal Portable</a> instance from PortApps. 
 
 ## Usage 
-Simply put the batch folder into wherever you have your Signal Portable instance. The batch folder needs to be on the same level as the app, data and log folders. The icon file is in case you want to make a shortcut to your start menu and want it to look nicer.
+Simply put the batch folder into wherever you have your Signal Portable instance. This can also be done by extracting the zip from the Releases Tab. <br>
+The batch folder needs to be on the same level as the app, data and log folders. The icon file is in case you want to make a shortcut to your start menu and want it to look nicer.
 <br>
 <br> 
 ### Like this
