@@ -13,7 +13,7 @@ The batch folder needs to be on the same level as the app, data and log folders.
 <br> 
 ### Like this
 app
-<br>batch
+<br>_batch_
 <br>data
 <br>log 
 <br>changelog.md
