@@ -1,12 +1,14 @@
 # Signal-Portable-Auto-Updater
 
 ### A simple batch script to automatically update Signal Portable.
-Since the Signal Portable App from Portapps is a bit of a hassle to update each time, here is an easy script for you to use.
+Since the Signal Portable App from Portapps does not update correctly, here is an easy script for you to use.
 
 ## Requirements 
 A working <a href="https://github.com/portapps/signal-portable">Signal Portable</a> instance from PortApps. <br>
 
 ## Usage 
+## IMPORTANT
+The normal update button in the top left corner will NOT WORK. You need to run this script in order to update. This is a quirk if Signal Portable, not the script. <br>
 Simply put the batch folder into wherever you have your Signal Portable instance. This can also be done by extracting the zip from the Releases Tab. <br>
 The batch folder needs to be on the same level as the app, data and log folders. The icon file is in case you want to make a shortcut to your start menu and want it to look nicer.
 <br>
