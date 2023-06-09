@@ -50,7 +50,7 @@ if not exist "%~dp0SignalSetup.exe" (
 )
 REM Unzip SignalSetup.exe
 echo Unzipping SignalSetup.exe...
-"C:\Program Files\7-Zip\7z.exe" x -aoa "%~dp0SignalSetup.exe" -o"%~dp0"
+%~dp07z.exe x -aoa "%~dp0SignalSetup.exe" -o"%~dp0"
 
 REM Go to "$PLUGINSDIR" folder
 cd "%~dp0$PLUGINSDIR"
@@ -64,7 +64,7 @@ cd "%~dp0..\app"
 
 REM Unzip "app-64.7z" in "app/" folder
 echo Unzipping app-64.7z in app/ folder...
-"C:\Program Files\7-Zip\7z.exe" x -aoa "%~dp0..\app\app-64.7z"
+%~dp07z.exe x -aoa "%~dp0..\app\app-64.7z"
 
 REM Start Signal application
 echo Starting Signal...
