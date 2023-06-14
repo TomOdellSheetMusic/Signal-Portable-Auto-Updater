@@ -7,7 +7,7 @@ Since the Signal Portable App from Portapps does not update correctly, here is a
 A working <a href="https://github.com/portapps/signal-portable">Signal Portable</a> instance from PortApps. <br>
 
 ## IMPORTANT
-The normal update button in the top left corner will NOT WORK. You need to run this script in order to update. This is a quirk of Signal Portable, not the script. <br>
+The update button in the top left corner will NOT WORK. You need to run this script in order to update. This is a quirk of Signal Portable, not the script. <br>
 
 ## Usage 
 
