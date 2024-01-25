@@ -8,6 +8,7 @@ A <a href="https://github.com/portapps/signal-portable">Signal Portable</a> inst
 
 ## IMPORTANT
 The update button in the top left corner will NOT WORK. You need to run this script in order to update. This is a quirk of Signal Portable, not the script. <br>
+The 7z.exe is just the normal, unaltered 7z.exe and dll that you would find in your personal installation. Feel free to download it yourself or check the checksum!
 
 ## Usage 
 
