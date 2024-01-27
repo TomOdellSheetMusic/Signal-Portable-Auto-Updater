@@ -19,20 +19,31 @@ if "%ERRORLEVEL%"=="0" (
     exit
 )
 
-REM Delete any existing SignalSetup.exe
-if exist "%~dp0SignalSetup.exe" (
-    echo Deleting existing SignalSetup.exe...
-    del "%~dp0SignalSetup.exe"
-	del "%~dp0latest.yml"
-)
-
 REM Download the latest version YAML file
 echo Downloading latest.yml...
 curl -o "%~dp0latest.yml" "https://updates.signal.org/desktop/latest.yml"
 
-REM Read the version information from the latest.yaml file
+REM Make a version variable for the yml and one for the lastChecked.txt
+set "version="
+set "lastChecked="
+
+REM Write the version information from the lastChecked.txt file to the lastChecked variable
+for /f "tokens=*" %%A in ('type "%~dp0lastChecked.txt"') do set "lastChecked=%%A"
+
+REM Echo it
+echo Last Checked was: %lastChecked%
+
+REM Set the version to the latest version from the latest.yaml file
 for /f "tokens=2 delims=: " %%A in ('findstr "version:" "%~dp0latest.yml"') do (
     set "version=%%A"
+)
+echo Latest version is: %version%
+
+REM Compare the strings
+if /I "%version: =%"=="%lastChecked: =%" (
+    echo Signal is up to date.
+    pause
+    exit
 )
 
 REM Construct the download URL
@@ -71,5 +82,10 @@ echo Starting Signal...
 start "" "%~dp0..\signal-portable.exe"
 
 echo File extraction completed.
-
+echo Cleanup...
+REM Delete any existing SignalSetup.exe
+if exist "%~dp0SignalSetup.exe" (
+    del "%~dp0SignalSetup.exe"
+	del "%~dp0latest.yml"
+)
 endlocal
