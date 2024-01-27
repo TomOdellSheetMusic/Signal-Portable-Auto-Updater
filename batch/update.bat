@@ -80,11 +80,23 @@ REM Start Signal application
 echo Starting Signal...
 start "" "%~dp0..\signal-portable.exe"
 
+REM Write the version information from the latest.yml file to the lastChecked.txt file
+for /f "tokens=2 delims=: " %%A in ('findstr "version:" "%~dp0latest.yml"') do (
+    echo %%A > "%~dp0lastChecked.txt"
+)
+
 echo File extraction completed.
 echo Cleanup...
 REM Delete any existing SignalSetup.exe
 if exist "%~dp0SignalSetup.exe" (
     del "%~dp0SignalSetup.exe"
 	del "%~dp0latest.yml"
+    REM Delete folders "$PLUGINSDIR" and "$R0"
+    if exist "%~dp0$PLUGINSDIR" (
+        rmdir /S /Q "%~dp0$PLUGINSDIR"
+    )
+    if exist "%~dp0$R0" (
+        rmdir /S /Q "%~dp0$R0"
+    )
 )
 endlocal
