@@ -15,6 +15,7 @@ tasklist /FI "IMAGENAME eq Signal.exe" | find /I "Signal.exe" >nul
 if "%ERRORLEVEL%"=="0" (
     echo Signal processes are still running. 
     echo Updater will now terminate.
+    pause
     exit
 )
 
@@ -41,7 +42,6 @@ echo Latest version is: %version%
 REM Compare the strings
 if /I "%version: =%"=="%lastChecked: =%" (
     echo Signal is up to date.
-    pause
     exit
 )
 
