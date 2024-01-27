@@ -14,6 +14,12 @@ The 7z.exe is just the normal, unaltered 7z.exe and dll that you would find in y
 
 Simply put the batch folder into wherever you have your Signal Portable instance. This can also be done by extracting the zip from the Releases Tab. <br>
 The batch folder needs to be on the same level as the app, data and log folders. The icon file is in case you want to make a shortcut to your start menu and want it to look nicer.
+
+## Automatic Updates
+
+If you want this to run automatically, simply use the task manager. I highly recommend using Version 1.2 or later if you want to do that!
+
+
 <br>
 <br> 
 ### Like this
