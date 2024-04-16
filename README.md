@@ -17,13 +17,10 @@ The batch folder needs to be on the same level as the app, data and log folders.
 
 ## Automatic Updates
 
-If you want this to run automatically, simply use the task scheduler. I highly recommend using Version 1.2 or later of the script if you want to do that!
+If you want this to run automatically, simply use the task scheduler. I highly recommend using Version 1.2 or later of the script if you want to do that
 
-
-<br>
-<br> 
-### Like this <br>
-app
+### Like this 
+<br>app
 <br>
 _batch_
 <br>data
