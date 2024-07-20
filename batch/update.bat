@@ -37,13 +37,17 @@ REM Set the version to the latest version from the latest.yaml file
 for /f "tokens=2 delims=: " %%A in ('findstr "version:" "%~dp0latest.yml"') do (
     set "version=%%A"
 )
-echo Latest version is: %version%
+echo Latest version is: %version
 
 REM Compare the strings
 if /I "%version: =%"=="%lastChecked: =%" (
     echo Signal is up to date.
+    REM Start Signal application
+    echo Starting Signal...
+    start "" "%~dp0..\signal-portable.exe"
     exit
 )
+
 
 REM Construct the download URL
 set "downloadURL=https://updates.signal.org/desktop/signal-desktop-win-%version%.exe"
